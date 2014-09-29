@@ -1,6 +1,6 @@
 {
   "name": "sortby",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "sortby orders JavaScript arrays using a MongoDB-like syntax.",
   "contributors": [
     {
