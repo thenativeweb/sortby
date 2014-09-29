@@ -1,0 +1,29 @@
+{
+  "name": "sortby",
+  "version": "0.0.0",
+  "description": "sortby orders JavaScript arrays using a MongoDB-like syntax.",
+  "contributors": [
+    {
+      "name": "Golo Roden",
+      "email": "golo.roden@thenativeweb.io"
+    },
+    {
+      "name": "Matthias Wagler",
+      "email": "matthias.wagler@thenativeweb.io"
+    }
+  ],
+  "main": "lib/by.js",
+  "dependencies": {
+    "sort-by": "0.0.2"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "node-assertthat": "0.2.0",
+    "tourism": "0.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenativeweb/sortby.git"
+  },
+  "license": "MIT"
+}

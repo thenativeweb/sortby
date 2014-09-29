@@ -1,0 +1,54 @@
+# sortby
+
+sortby orders JavaScript arrays using a MongoDB-like syntax.
+
+## Installation
+
+    $ npm install sortby
+
+## Quick Start
+
+First you need to add a reference to sortby in your application.
+
+```javascript
+var by = require('sortby');
+```
+
+Then you can use it to sort arrays using a sort configuration object as used in MongoDB.
+
+```javascript
+var users = [
+  {
+    firstName: 'Tim',
+    lastName: 'Cook'
+  }, {
+    firstName: 'Steve',
+    lastName: 'Jobs'
+  }, {
+    firstName: 'Tim',
+    lastName: 'Berners-Lee'
+  }
+];
+
+console.log(users.sort(by({ firstName: 1, lastName: -1 })));
+// => { firstName: 'Steve', lastName: 'Jobs' },
+//    { firstName: 'Tim', lastName: 'Cook' },
+//    { firstName: 'Tim', lastName: 'Berners-Lee' }
+```
+
+## Running the build
+
+This module can be built using [Grunt](http://gruntjs.com/). Besides running the tests, this also analyses the code. To run Grunt, go to the folder where you have installed sortby and run `grunt`. You need to have [grunt-cli](https://github.com/gruntjs/grunt-cli) installed.
+
+    $ grunt
+
+## License
+
+The MIT License (MIT)
+Copyright (c) 2014 the native web.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
