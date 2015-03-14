@@ -25,5 +25,8 @@
     "type": "git",
     "url": "git://github.com/thenativeweb/sortby.git"
   },
+  "keywords": [
+    "sort"
+  ],
   "license": "MIT"
 }
